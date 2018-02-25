@@ -6,6 +6,10 @@ export default function (ComposedComponent) {
         static contextTypes = {
             router: React.PropTypes.object
         }
+        //https://reactjs.org/docs/context.html
+        //context is similar to props
+        //props are passed from component to component (parent to child)
+        //context can skip components and gets you access 
 
         componentWillMount(){
             if (!this.props.authenticated){
